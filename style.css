@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    background-color: #a7b5d1;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.body-container {
+    background-color: white;
+    margin: 0 auto;
+    width: 80vw;
+    height: 650px;
+}
+
+.cards-container.card-event {
+    pointer-events: none;
+}
+
+.cards-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    grid-template-areas:
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m n o p";
+    background-color: red;
+    width: 90vw; 
+    height: 100vh;
+}
+
+.card-title {
+    font-size: 8px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    background-color: blue;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.card-tab {
+    background-color: orange;
+    display: none;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.tab-content {
+    float: top;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.card-tab.tab-event {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.closeTab {
+    margin: 0;
+    height: 20px;
+    border: none;
+}
